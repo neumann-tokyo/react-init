@@ -1,4 +1,5 @@
-import { Flex, Heading, Link, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	return (
@@ -8,12 +9,14 @@ export default function Header() {
 			justifyContent="space-between"
 			alignItems="center"
 		>
-			<Heading as="h1" size="lg">
-				React Init
-			</Heading>
+			<Link to="/">
+				<Heading as="h1" size="lg">
+					React Init
+				</Heading>
+			</Link>
 			<Flex gap="1rem">
-				<Link>
-					<Text fontSize="2xl">aaa</Text>
+				<Link to="content">
+					<Text fontSize="2xl">content</Text>
 				</Link>
 				<Link>
 					<Text fontSize="2xl">bbb</Text>
