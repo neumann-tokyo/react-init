@@ -5,5 +5,5 @@
 * [x] react-router-dom
 * [x] biome (Linter, Formatter)
 * [x] lefthook
-* [ ] vitest, happy-dom
+* [x] vitest, happy-dom
 * [x] docker compose for production
