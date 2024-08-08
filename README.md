@@ -7,3 +7,4 @@
 * [x] lefthook
 * [x] vitest, happy-dom
 * [x] docker compose for production
+* [x] TypeScript

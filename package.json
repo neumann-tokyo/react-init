@@ -9,10 +9,11 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"check": "biome check --apply .",
 		"test": "vitest run",
+		"repl": "tsx",
 		"postinstall": "lefthook install"
 	},
 	"dependencies": {
@@ -34,7 +35,10 @@
 		"@vitejs/plugin-react": "^4.2.1",
 		"happy-dom": "^12.10.3",
 		"lefthook": "^1.5.5",
+		"tsx": "^4.16.5",
+		"typescript": "^5.5.4",
 		"vite": "^5.0.8",
+		"vite-tsconfig-paths": "^5.0.0",
 		"vitest": "^1.1.1"
 	}
 }
