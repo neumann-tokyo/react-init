@@ -18,10 +18,10 @@ export default function Header() {
 				<Link to="content">
 					<Text fontSize="2xl">content</Text>
 				</Link>
-				<Link>
+				<Link to="content">
 					<Text fontSize="2xl">bbb</Text>
 				</Link>
-				<Link>
+				<Link to="content">
 					<Text fontSize="2xl">ccc</Text>
 				</Link>
 			</Flex>
