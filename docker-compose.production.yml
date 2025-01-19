@@ -14,9 +14,9 @@ services:
     restart: always
     command:
       - "http"
-      - "--domain=xxx.ngrok.app"
+      - "--domain=$NGROK_DOMAIN"
       - "web:80"
     links:
       - web
     environment:
-      - NGROK_AUTHTOKEN=
+      - NGROK_AUTHTOKEN=$NGROK_AUTHTOKEN
