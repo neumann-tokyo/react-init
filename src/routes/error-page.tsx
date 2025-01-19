@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
-import { useRouteError } from "react-router-dom";
+import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 
 export default function ErrorPage() {
 	const error = useRouteError();
@@ -9,8 +9,12 @@ export default function ErrorPage() {
 			<Heading as="h1" size="2xl" margin="3rem 0">
 				Oops!
 			</Heading>
-			<Text>Sorry, an unexpected error has occurred.</Text>
-			<Text>{error.statusText || error.message}</Text>
+			{isRouteErrorResponse(error) && (
+				<>
+					<Text>Sorry, an unexpected error has occurred.</Text>
+					<Text>{error.status || error.statusText}</Text>
+				</>
+			)}
 		</Flex>
 	);
 }
